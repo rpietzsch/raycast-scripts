@@ -15,7 +15,7 @@
 # @raycast.author rpietzsch
 # @raycast.authorURL https://github.com/rpietzsch/
 
-NS=`curl -s http://prefix.cc/${1}.file.ini | cut -d '=' -f 2`
+NS=$(curl -s http://prefix.cc/${1}.file.ini | cut -d '=' -f 2)
 
 if [ "${2}" = "ns" ] ; then
   echo $NS
