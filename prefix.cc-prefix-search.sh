@@ -9,7 +9,7 @@
 # @raycast.icon 🔗
 # @raycast.packageName RDF Tools
 # @raycast.argument1 { "type": "text", "placeholder": "prefix" }
-# @raycast.argument2 { "type": "text", "placeholder": "return: ns, ttl, sparql*", "optional": true }
+# @raycast.argument2 { "type": "text", "placeholder": "return: sparql*, ns, ttl, open", "optional": true }
 
 # Documentation:
 # @raycast.author rpietzsch
@@ -21,6 +21,8 @@ if [ "${2}" = "ns" ] ; then
   echo "${NS}"
 elif  [ "${2}" = "ttl" ] ; then
   echo "@prefix ${1}: <${NS}> ."
+elif  [ "${2}" = "open" ] ; then
+  open "${NS}"
 else
   echo "PREFIX ${1}: <${NS}>"
 fi
