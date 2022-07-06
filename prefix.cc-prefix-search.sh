@@ -18,7 +18,7 @@
 NS=$(curl -s http://prefix.cc/${1}.file.ini | cut -d '=' -f 2)
 
 if [ "${2}" = "ns" ] ; then
-  echo $NS
+  echo "${NS}"
 elif  [ "${2}" = "ttl" ] ; then
   echo "@prefix ${1}: <${NS}> ."
 else
