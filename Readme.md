@@ -27,5 +27,7 @@ Find raycast at: https://www.raycast.com/
     * => `⇧⌘C` takes it to your clipboard
   * `open` - opens the namespace IRI in your browser
     * e.g. <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  * `cc` - opens the prefix in <prefix.cc>
+    * e.g. <http://prefix.cc/dct>
   * `vowl` - opens the namespace IRI in the [tib vowl service](https://service.tib.eu/webvowl/)
     * e.g. <https://service.tib.eu/webvowl/#iri=http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23>

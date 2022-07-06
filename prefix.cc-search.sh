@@ -9,11 +9,12 @@
 # @raycast.icon 🔗
 # @raycast.packageName RDF Tools
 # @raycast.argument1 { "type": "text", "placeholder": "prefix" }
-# @raycast.argument2 { "type": "text", "placeholder": "sparql*, ns, ttl, open, vowl", "optional": true }
+# @raycast.argument2 { "type": "text", "placeholder": "sparql*, ns, ttl, cc, open, vowl", "optional": true }
 
 # Documentation:
 # @raycast.author rpietzsch
 # @raycast.authorURL https://github.com/rpietzsch/
+# @raycast.description Search vocab prefix with prefix.cc and resturn the result in various formats.
 
 NS=$(curl -s http://prefix.cc/${1}.file.ini | cut -d '=' -f 2)
 
@@ -28,6 +29,8 @@ elif  [ "${2}" = "open" ] ; then
   open -u "${NS}"
 elif  [ "${2}" = "vowl" ] ; then
   open -u "https://service.tib.eu/webvowl/#iri=${NS_}"
+elif  [ "${2}" = "cc" ] ; then
+  open -u "http://prefix.cc/${1}"
 else
   echo "PREFIX ${1}: <${NS}>"
 fi
