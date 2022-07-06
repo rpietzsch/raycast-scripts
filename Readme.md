@@ -1,6 +1,6 @@
 # raycast script collection
 
-This repository is a collection of custom raycast script.
+This repository is a collection of custom raycast scripts.
 Find raycast at: https://www.raycast.com/
 
 ## installation
