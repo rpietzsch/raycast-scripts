@@ -9,7 +9,7 @@
 # @raycast.icon 🔗
 # @raycast.packageName RDF Tools
 # @raycast.argument1 { "type": "text", "placeholder": "prefix" }
-# @raycast.argument2 { "type": "text", "placeholder": "return: sparql*, ns, ttl, open, vowl", "optional": true }
+# @raycast.argument2 { "type": "text", "placeholder": "sparql*, ns, ttl, open, vowl", "optional": true }
 
 # Documentation:
 # @raycast.author rpietzsch
